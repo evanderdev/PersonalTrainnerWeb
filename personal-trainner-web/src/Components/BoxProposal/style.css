@@ -1,0 +1,57 @@
+.box-content {
+    width: 15rem;
+    height: 15rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: lightgrey;
+    border-radius: 10px;
+    border: 5px solid #fdf0cb;
+    margin-top: 2rem;
+    transition: all 1s;
+}
+
+.box-content:hover {
+    height: 25rem;
+    transition: all 1s;
+}
+
+.box-content h2 {
+    height: 1rem;
+    font-family: 'Libre Franklin';
+    font-size: 1.1rem;
+    padding: 1rem;
+    margin-bottom: 1px solid black;
+}
+
+.box-content div {
+    width: 12rem;
+    height: 8rem;
+    background: white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -20px;
+}
+
+.box-content p {
+    display: none;
+}
+
+.box-content:hover p {
+    display: flex;
+    padding: .5rem;
+}
+
+
+.box-content img {
+    width: 10rem;
+    height: 5rem;
+}
+
+@media (min-width: 701px) {
+    .box-content {
+        margin-right: 5rem;
+    }
+}
