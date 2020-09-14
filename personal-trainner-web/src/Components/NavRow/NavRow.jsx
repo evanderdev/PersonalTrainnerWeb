@@ -14,7 +14,7 @@ const Ul = styled.ul`
         right: 0;
         height: 100vh;
         width: 250px;
-        padding-top: 3.5rem;
+        padding-top: 5rem;
         transition: transform 0.3s ease-in-out;
 
         a {
@@ -27,9 +27,9 @@ const NavRow = ({ open }) => {
     return (
         <Ul className="nav-content" open={open}>
             <a href="./">Início</a>
-            <a href="./sobre">Sobre mim</a>
+            <a href="./sobremim">Sobre mim</a>
             <a href="./planos">Planos</a>
-            <a href="./formacaoecursos">Formação e Cursos</a>
+            <a href="./cursoseformacao">Formação e Cursos</a>
             <a href="./beneficios">Benefícios</a>
         </Ul>
     )

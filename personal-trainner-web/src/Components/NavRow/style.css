@@ -4,13 +4,17 @@
 
 .nav-content a {
     padding: 18px 10px;
-    color: black;
+    color: white;
     font-family: 'Libre Franklin';
     text-transform: uppercase;
     font-size: .8rem;
     text-decoration: none;
     opacity: 90%;
     transition: all .5s;
+}
+
+.sticky .nav-content a {
+    color: #3c53a3;
 }
 
 .nav-content a:hover {

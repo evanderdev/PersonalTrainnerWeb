@@ -20,9 +20,10 @@ const StyledBurger = styled.div`
   div {
     width: 2rem;
     height: 0.25rem;
-    background-color: ${({ open }) => open ? 'white' : '#333'};
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 20%) ;
     border-radius: 10px;
-    transform-origin: 1px;
+    transform-origin: .5px;
     transition: all 0.3s linear;
 
     &:nth-child(1) {

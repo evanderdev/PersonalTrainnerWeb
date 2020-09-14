@@ -1,15 +1,17 @@
-import React, { useState } from 'react';
-import styled from 'styled-components';
+import React from 'react';
 
 import './style.css';
 
 const BoxProposal = ({ description, img, name }) => {
-    const [open, setOpen] = useState(false);
     return (
         <main className="box-content">
-                <div><img src={img} alt={name}/></div>
-                <h2>{name}</h2>
-                <p>{description}</p>
+            <div className="img-content"><img src={img} alt={name} /></div>
+            <span>{name}</span>
+            <div className="content">
+                <div className="plus-content">+</div>
+                <div className="description-content">{description}</div>
+            </div>
+
         </main>
     )
 }

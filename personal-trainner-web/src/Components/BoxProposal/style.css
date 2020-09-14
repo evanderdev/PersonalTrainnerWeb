@@ -1,12 +1,12 @@
 .box-content {
     width: 15rem;
     height: 15rem;
+    box-shadow: 0 0 5px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background: lightgrey;
-    border-radius: 10px;
-    border: 5px solid #fdf0cb;
+    background: white;
+    border-radius: 5px;
     margin-top: 2rem;
     transition: all 1s;
 }
@@ -16,36 +16,56 @@
     transition: all 1s;
 }
 
-.box-content h2 {
-    height: 1rem;
+.box-content span {
     font-family: 'Libre Franklin';
     font-size: 1.1rem;
-    padding: 1rem;
-    margin-bottom: 1px solid black;
 }
 
-.box-content div {
+.box-content:hover span {
+    margin-top: -5rem;
+    transition: all 1s;
+}
+
+.img-content {
     width: 12rem;
     height: 8rem;
-    background: white;
     border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -20px;
 }
 
-.box-content p {
-    display: none;
-}
-
-.box-content:hover p {
+.plus-content {
+    width: 100%;
+    height: 2rem;
     display: flex;
-    padding: .5rem;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    font-family: 'Libre Franklin';
+    font-size: 4rem;
+    transform: rotate(0deg);
+    transition: all .3s;
 }
 
+.box-content:hover .plus-content {
+    transform: rotate(90deg);
+    transition: all .3s;
+    color: transparent;
+}
 
-.box-content img {
+.description-content {
+    color: transparent;
+    font-size: 1rem;
+}
+
+.box-content:hover .description-content {
+    color: black;
+    margin-top: -10rem;
+    transition: all 1s;
+}
+
+.img-content img {
     width: 10rem;
     height: 5rem;
 }
